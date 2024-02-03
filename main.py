@@ -23,6 +23,7 @@ DHT_PORTS = [6881, 6891]
 
 @bot.event
 async def on_ready():
+    bot.author = 'tbwcjw'
     bot.app_title = 'DiscordMagnetResolver'
     bot.app_version = '1.0.0'
     print(f"{bot.app_title} - {bot.app_version}\nBy {bot.app_author}, 2023.\nLogged in as {bot.user.name}")
