@@ -1,0 +1,12 @@
+version: '3'
+services:
+  python:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./discordmagnetresolver.py:/app/discordmagnetresolver.py
+    environment:
+      - TOKEN=
+    command: python /app/discordmagnetresolver.py
